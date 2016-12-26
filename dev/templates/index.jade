@@ -1,0 +1,66 @@
+extends _layout
+block content
+	main.main-content
+		.container.cf
+			.left-side
+				h1 Успешный старт с 3 безрисковыми сделками!
+				p Открой счет и получи преимущество над финансовым рынком!
+				p Страховка трех первых сделок – это гарантия положительного опыта вначале, который в дальнейшем станет гарантией успеха.
+				img(src="img/p.png", alt="")
+			.right-side
+				.form-wrapper.cf
+					.form-inner
+						p Регистрация займет <br>у вас всего 30 секунд!
+						form#open-account-form
+							.inp-wrap
+								input(type='text', placeholder='Имя', name='fname')
+								span.ol-err
+							.inp-wrap
+								input(type='text', placeholder='Фамилия', name='lname')
+								span.ol-err
+							.inp-wrap
+								input(type='email', placeholder='Адрес эл. почты', name='email')
+								span.ol-err
+							.inp-wrap
+								input(type='password', placeholder='Пароль', name='password')
+								span.ol-err
+							.form-row.cf
+								input.code(type='text', placeholder='+7', name='phone_prefix')
+								input.number(type='text', placeholder='Телефон', name='phone')
+								span.ol-err
+							.inp-wrap
+								select.select(name='country')
+							input#your-language(type='hidden', name='language', value='Russian')
+							input#your-currency(type='hidden', name='currency', value='USD')
+							//- Campaign info
+							input#your-affiliate(type='hidden', name='affiliate', value='')
+							input#your-campaign(type='hidden', name='campaign', value='')
+							input#your-a_aid(type='hidden', name='a_aid', value='')
+							input#your-b_bid(type='hidden', name='b_bid', value='')
+							input#your-trading_group_id(type='hidden', name='trading_group_id', value='')
+							//- Terms & Conditions checkbox
+							label.terms-label
+								input.terms(type='checkbox', name='terms', value='1')
+								| Я принимаю 
+								a(target='_blank', href='https://binaring.com/terms-conditions/') правила и соглашения*
+							input.submit(type='submit', value='Зарегистрироваться сейчас')
+							.errors.alert.alert-danger(style='display: none;')
+		.awards-block
+			.container
+				ul.our-awards
+					li.cf
+						.logo-side
+							img(src="img/award1.png", alt="")
+						.txt-side
+							p.heading 2016 Forex Expo Awards
+							p Лучший брокер бинарных опционов для начинающих
+					li.cf
+						.logo-side
+							img(src="img/award2.png", alt="")
+						.txt-side
+							p.heading 2016 IAIR Awards
+							p Брокер года в номинации «бинарные опционы»
+
+
+
+block inlineScripts

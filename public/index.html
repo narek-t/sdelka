@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,700&amp;amp;subset=cyrillic,cyrillic-ext"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="all-wrapper">
+      <div class="left-bg"></div>
+      <div class="right-bg"></div>
+      <header class="site-header">
+        <div class="container cf">
+          <div class="logo"><a href="#"><img src="img/logo.png" alt=""/></a></div>
+          <div class="language">
+            <p>Выбрать язык</p>
+            <ul class="language__list">
+              <li><a href="#" class="active">RU</a></li>
+              <li><a href="#">EN</a></li>
+              <li><a href="#">AR</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="container cf">
+          <div class="left-side">
+            <h1>Успешный старт с 3 безрисковыми сделками!</h1>
+            <p>Открой счет и получи преимущество над финансовым рынком!</p>
+            <p>Страховка трех первых сделок – это гарантия положительного опыта вначале, который в дальнейшем станет гарантией успеха.</p><img src="img/p.png" alt=""/>
+          </div>
+          <div class="right-side">
+            <div class="form-wrapper cf">
+              <div class="form-inner">
+                <p>Регистрация займет <br>у вас всего 30 секунд!</p>
+                <form id="open-account-form">
+                  <div class="inp-wrap">
+                    <input type="text" placeholder="Имя" name="fname"/><span class="ol-err"></span>
+                  </div>
+                  <div class="inp-wrap">
+                    <input type="text" placeholder="Фамилия" name="lname"/><span class="ol-err"></span>
+                  </div>
+                  <div class="inp-wrap">
+                    <input type="email" placeholder="Адрес эл. почты" name="email"/><span class="ol-err"></span>
+                  </div>
+                  <div class="inp-wrap">
+                    <input type="password" placeholder="Пароль" name="password"/><span class="ol-err"></span>
+                  </div>
+                  <div class="form-row cf">
+                    <input type="text" placeholder="+7" name="phone_prefix" class="code"/>
+                    <input type="text" placeholder="Телефон" name="phone" class="number"/><span class="ol-err"></span>
+                  </div>
+                  <div class="inp-wrap">
+                    <select name="country" class="select"></select>
+                  </div>
+                  <input id="your-language" type="hidden" name="language" value="Russian"/>
+                  <input id="your-currency" type="hidden" name="currency" value="USD"/>
+                  <input id="your-affiliate" type="hidden" name="affiliate" value=""/>
+                  <input id="your-campaign" type="hidden" name="campaign" value=""/>
+                  <input id="your-a_aid" type="hidden" name="a_aid" value=""/>
+                  <input id="your-b_bid" type="hidden" name="b_bid" value=""/>
+                  <input id="your-trading_group_id" type="hidden" name="trading_group_id" value=""/>
+                  <label class="terms-label">
+                    <input type="checkbox" name="terms" value="1" class="terms"/>Я принимаю <a target="_blank" href="https://binaring.com/terms-conditions/">правила и соглашения*</a>
+                  </label>
+                  <input type="submit" value="Зарегистрироваться сейчас" class="submit"/>
+                  <div style="display: none;" class="errors alert alert-danger"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="awards-block">
+          <div class="container">
+            <ul class="our-awards">
+              <li class="cf">
+                <div class="logo-side"><img src="img/award1.png" alt=""/></div>
+                <div class="txt-side">
+                  <p class="heading">2016 Forex Expo Awards</p>
+                  <p>Лучший брокер бинарных опционов для начинающих</p>
+                </div>
+              </li>
+              <li class="cf">
+                <div class="logo-side"><img src="img/award2.png" alt=""/></div>
+                <div class="txt-side">
+                  <p class="heading">2016 IAIR Awards</p>
+                  <p>Брокер года в номинации «бинарные опционы»</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top cf">
+          <p class="copyright">Copyright © Binaring.com</p>
+          <p class="made-by">Designed and Developed by <a href="https://belugalab.ru/" target="_blank">Beluga Labs</a></p>
+        </div>
+        <div class="footer-bottom">
+          <p class="bottom-txt">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          <p class="sert">Регулируется ЦРОФР<br>Сертификат RU 0395 AA V0089</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//static.optionlift.com/sdk.js?ver=4.5.4"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
